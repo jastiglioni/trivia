@@ -1,16 +1,25 @@
 import React, {useState} from 'react'
-import Button from './components/Button'
+import Tile from './components/Tile'
 import Popup from './components/Popup'
 import './App.css';
 
 const App = (props) => {
-  const [tiles, setTiles] = useState(props.notes)
+  const [tiles] = useState(props.notes)
   const [popup, setPopup] = useState(false)
+  const [q2, setq2] = useState('')
+  
+
+  const setQuestion = (tile) => {
+    setq2(tile.text)
+    tile.value = ''
+    togglePopup()
+  }
 
   const togglePopup = () => {
     setPopup(!popup)
-    console.log(popup);
   }
+
+  
 
   const col = {
     color: `white`,
@@ -24,10 +33,10 @@ const App = (props) => {
   }
  
   return (
-    <div display="table" className="App">
-      <button style={col} onClick={() => togglePopup()}>MILITARY</button>
-      {tiles.map(obj => <Button key={obj.text} tile={obj.value} />)}
-      {popup ? <Popup text={`IT'S THE TYPE OF ELECTRICAL CURRENT THAT TRAVELS ONE WAY ONLY`} /> : null}
+    <div className="App">
+      <button style={col}>JAPAN</button>
+      {tiles.map(obj => <Tile func={() => setQuestion(obj)}key={obj.text} tile={obj.value} />)}
+      <Popup func={() => togglePopup()} trigger={popup} text={q2} />
     </div>
 
     
