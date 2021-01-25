@@ -4,29 +4,35 @@ import App from './App'
 
 const notes = [
   {
-    text: 'A dish of prepared vinegared rice accompanying a variety of ingredients, especially raw fish',
+    text: `this singer-songwriter is spotify's most streamed artist`.toUpperCase(),
     value: '$ 200',
-    selected: false
+    selected: false,
+    audio: false
   },
   {
-    text: 'A form of wrestling where a wrestler attempts to force his opponent out of a circular ring or into touching the ground with any body part other than the soles of his feet',
+    text: 'this recording artist had an illustrious solo career after leaving N-Sync in 2002'.toUpperCase(),
     value: '$ 400',
-    selected: false
+    selected: false,
+    audio: false
   },
   {
-    text: 'comics or graphic novels originating from Japan',
+    text: 'finish the lyrics to this verse'.toUpperCase(),
     value: '$ 600',
-    selected: false
+    selected: false,
+    audio: 'trap',
   },
   {
-    text: 'a concept referring to business activities that continuously improve all functions and involve all employees',
+    text: `the final iteration of Destiny's Child was composed of Beyonce Knowles, Michelle Williams, and this artist`.toUpperCase(),
     value: '$ 800',
-    selected: false
+    selected: false,
+    audio: false
   },
+  
   {
-    text: 'the title of the military dictators of Japan during most of the period spanning from 1185 to 1868',
+    text: 'R&B Artist Genuwine released this timeless R&B record in 2001'.toUpperCase(),
     value: '$ 1000',
-    selected: false
+    selected: false,
+    audio: 'dif',
   }
 ]
 
