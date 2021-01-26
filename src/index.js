@@ -4,7 +4,7 @@ import App from './App'
 
 const notes = [
   {
-    text: `this singer-songwriter is spotify's most streamed artist`.toUpperCase(),
+    text: `Beyonce began her music career appearing as the lead singer of this group`.toUpperCase(),
     value: '$ 200',
     selected: false,
     audio: false
@@ -19,20 +19,20 @@ const notes = [
     text: 'finish the lyrics to this verse'.toUpperCase(),
     value: '$ 600',
     selected: false,
-    audio: 'trap',
+    audio: 'drake',
   },
   {
-    text: `the final iteration of Destiny's Child was composed of Beyonce Knowles, Michelle Williams, and this artist`.toUpperCase(),
+    text: `Eminem's moniker play's off of his real name`.toUpperCase(),
     value: '$ 800',
     selected: false,
     audio: false
   },
   
   {
-    text: 'R&B Artist Genuwine released this timeless R&B record in 2001'.toUpperCase(),
+    text: 'Earth, Wind, & Fire released this timeless classic in 1978'.toUpperCase(),
     value: '$ 1000',
     selected: false,
-    audio: 'dif',
+    audio: 'ewf',
   }
 ]
 
