@@ -4,7 +4,7 @@ import App from './App'
 
 const notes = [
   {
-    text: `Beyonce began her music career appearing as the lead singer of this group`.toUpperCase(),
+    text: `Beyonce began her musical career appearing as the lead singer of this group`.toUpperCase(),
     value: '$ 200',
     selected: false,
     audio: false
@@ -22,7 +22,7 @@ const notes = [
     audio: 'drake',
   },
   {
-    text: `Eminem's moniker play's off of his real name`.toUpperCase(),
+    text: `Eminem's moniker plays off of his real name`.toUpperCase(),
     value: '$ 800',
     selected: false,
     audio: false
