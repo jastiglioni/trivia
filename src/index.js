@@ -22,7 +22,7 @@ const notes = [
     audio: 'drake',
   },
   {
-    text: `Eminem's moniker plays off of his real name`.toUpperCase(),
+    text: `Eminem's moniker plays off of the initials his real name`.toUpperCase(),
     value: '$ 800',
     selected: false,
     audio: false

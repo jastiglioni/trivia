@@ -35,7 +35,7 @@ const App = (props) => {
     height: `200px`,
     fontSize: `50px`,
     textAlign: `center`,
-    textShadow: `4px 4px black`,
+    textShadow: `4px 4px 0.075em black`,
     border: `none`
   }
  
