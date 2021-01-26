@@ -24,7 +24,7 @@
     max-width: 1000px;
     background-color: #0309B8;
     font-family: korinna;
-    text-shadow: 5px 5px black;
+    text-shadow: 5px 5px 0.075em black;
     font-size: 75px;
 
 }
