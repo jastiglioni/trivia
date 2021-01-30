@@ -1,21 +1,28 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Tile from './components/Tile'
 import Popup from './components/Popup'
 import './App.css';
+import axios from 'axios';
 
-const App = (props) => {
-  const [tiles] = useState(props.notes)
+const App = () => {
+  const [tiles, setTiles] = useState([])
   const [popup, setPopup] = useState(false)
   const [q2, setq2] = useState('')
   const [audio, setAudio] = useState(false)
   //const [audFile, setAudFile] = useState('')
   
+  useEffect(() => {
+    axios
+      .get('http://localhost:3001/notes')
+      .then (res => {
+        setTiles(res.data)
+      })
+  }, [])
 
   const setQuestion = (tile) => {
     setq2(tile.text)
     setAudio(tile.audio)
     console.log("the audio is", tile.audio)
-    //setAudFile(tile.audFile)
     tile.value = ''
     togglePopup()
   }
@@ -47,7 +54,7 @@ const App = (props) => {
     </div>
 
     
-  );
+  )
 }
 
 export default App;
