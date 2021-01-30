@@ -1,40 +1,39 @@
 {
-     "notes": [
-        {
-          "id": 1,
-          "text": "Beyonce began her musical career appearing as the lead singer of this group",
-          "value": "$ 200",
-          "selected": false,
-          "audio": false
-        },
-        {
-          "id": 2,
-          "text": "this recording artist had an illustrious solo career after leaving N-Sync in 2002",
-          "value": "$ 400",
-          "selected": false,
-          "audio": false
-        },
-        {
-          "id": 3,
-          "text": "finish the lyrics to this verse",
-          "value": "$ 600",
-          "selected": false,
-          "audio": "drake"
-        },
-        {
-          "id": 4,
-          "text": "Eminem's moniker plays off of the initials his real name",
-          "value": "$ 800",
-          "selected": false,
-          "audio": false
-        },
-        
-        {
-          "id": 5,
-          "text": "Earth, Wind, & Fire released this timeless classic in 1978",
-          "value": "$ 1000",
-          "selected": false,
-          "audio": "ewf"
-        }
-      ]
+  "notes": [
+    {
+      "id": 1,
+      "text": "help",
+      "value": "$ 200",
+      "selected": false,
+      "audio": false
+    },
+    {
+      "id": 2,
+      "text": "this recording artist had an illustrious solo career after leaving N-Sync in 2002",
+      "value": "$ 400",
+      "selected": false,
+      "audio": false
+    },
+    {
+      "id": 3,
+      "text": "finish the lyrics to this verse",
+      "value": "$ 600",
+      "selected": false,
+      "audio": "drake"
+    },
+    {
+      "id": 4,
+      "text": "Eminem's moniker plays off of the initials his real name",
+      "value": "$ 800",
+      "selected": false,
+      "audio": false
+    },
+    {
+      "id": 5,
+      "text": "Earth, Wind, & Fire released this timeless classic in 1978",
+      "value": "$ 1000",
+      "selected": false,
+      "audio": "ewf"
+    }
+  ]
 }

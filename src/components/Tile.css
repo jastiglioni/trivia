@@ -6,6 +6,6 @@
     font-size: 100px;
     font-family: Impact;
     text-align: center;
-    text-shadow: 4px 4px black;
+    text-shadow: 4px 4px 0.075em black;
     letter-spacing: 2px;
 }
