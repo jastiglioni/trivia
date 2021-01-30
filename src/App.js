@@ -20,7 +20,7 @@ const App = () => {
   }, [])
 
   const setQuestion = (tile) => {
-    setq2(tile.text)
+    setq2(tile.text.toUpperCase())
     setAudio(tile.audio)
     console.log("the audio is", tile.audio)
     tile.value = ''
