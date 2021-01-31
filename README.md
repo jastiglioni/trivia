@@ -1,5 +1,5 @@
 
-# Live Demo: jacobs-game-room.herokuapp.com
+# Live Demo: [jacobs-game-room.herokuapp.com](jacobs-game-room.herokuapp.com)
 -----------------------------------------------
 
 # Getting Started with Create React App
