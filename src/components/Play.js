@@ -8,7 +8,8 @@ const Play = (props) => {
         sprite: {
             drake: [0, 3170],
             ewf: [3175, 8270]
-        }
+        },
+        volume: 0.4
     })
 
      return (props.audio !== false) ? (
