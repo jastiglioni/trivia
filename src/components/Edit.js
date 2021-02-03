@@ -27,8 +27,8 @@ const handleSelect = (event) => {
     setQid(event.target.value)
 }
 
-const handleSubmit = (id) => {  //ONLY WORKS WITH 1
-
+const handleSubmit = (event, id) => {  //ONLY WORKS WITH 1
+    event.preventDefault()
     const url = `http://localhost:3001/notes/${id}`
     const tile = tiles.find(n => n.id === id)
     const changedNote = { ...tile, value: text }

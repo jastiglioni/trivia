@@ -8,11 +8,8 @@
       "audio": false
     },
     {
-      "id": 2,
-      "text": "this recording artist had an illustrious solo career after leaving N-Sync in 2002",
-      "value": "$ 400",
-      "selected": false,
-      "audio": false
+      "value": "please",
+      "id": 2
     },
     {
       "id": 3,
