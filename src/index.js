@@ -16,10 +16,10 @@ const notes = [
     audio: false
   },
   {
-    text: 'finish the lyrics to this verse'.toUpperCase(),
+    text: 'This composition by Beethoven was published in 1867'.toUpperCase(),
     value: '$ 600',
     selected: false,
-    audio: 'drake',
+    audio: 'ewf',
   },
   {
     text: `Eminem's moniker plays off of the initials his real name`.toUpperCase(),
@@ -27,12 +27,11 @@ const notes = [
     selected: false,
     audio: false
   },
-  
   {
-    text: 'Earth, Wind, & Fire released this timeless classic in 1978'.toUpperCase(),
+    text: 'This critally-accliamed rendition of the National Anthem was performed by this artist'.toUpperCase(),
     value: '$ 1000',
     selected: false,
-    audio: 'ewf',
+    audio: 'drake',
   }
 ]
 

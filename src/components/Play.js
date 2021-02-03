@@ -1,15 +1,15 @@
 import useSound from 'use-sound'
 import './Play.css'
-import soundUrl from './sprite.mp3'
+import soundUrl from './fur.mp3'
 
 const Play = (props) => {
     
     const [play] = useSound(soundUrl, {
         sprite: {
-            drake: [0, 3170],
-            ewf: [3175, 8270]
+            ewf: [0, 9700],
+            drake: [10525, 13000]
         },
-        volume: 0.2
+        volume: 0.35
     })
 
      return (props.audio !== false) ? (
