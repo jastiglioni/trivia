@@ -3,7 +3,7 @@
     {
       "id": 1,
       "text": "another test",
-      "value": "$ 200",
+      "value": "only",
       "selected": false,
       "audio": false
     },
@@ -22,11 +22,8 @@
       "audio": "drake"
     },
     {
-      "id": 4,
-      "text": "Eminem's moniker plays off of the initials his real name",
-      "value": "$ 800",
-      "selected": false,
-      "audio": false
+      "value": "",
+      "id": 4
     },
     {
       "id": 5,

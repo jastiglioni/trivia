@@ -5,6 +5,7 @@ const Edit = (props) => {
 
 const [tiles, setTiles] = useState('')
 const [text, setText] = useState('')
+const [qid, setQid] = useState('')   //Qid = Question ID
 
 useEffect(() => {
     axios
@@ -20,10 +21,17 @@ const handleChange = (event) => {
     setText(event.target.value)
 }
 
-const handleSubmit = (id) => {
+const handleSelect = (event) => {
+    event.preventDefault()
+    console.log(event.target.value);
+    setQid(event.target.value)
+}
+
+const handleSubmit = (id) => {  //ONLY WORKS WITH 1
+
     const url = `http://localhost:3001/notes/${id}`
     const tile = tiles.find(n => n.id === id)
-    const changedNote = { ...tile, text: text }
+    const changedNote = { ...tile, value: text }
     axios.put(url, changedNote).then(response => {
     setTiles(tiles.map(q => q.id !== id ? q : response.data))  //response.data is changedNote
     })
@@ -31,7 +39,15 @@ const handleSubmit = (id) => {
 
     return (
         <div>
-            <form onSubmit={() => handleSubmit(1)}>
+            <form onSubmit={() => handleSubmit(qid)}>
+                <select value={qid} onChange={handleSelect}>
+                    <option value="">--Please choose an option--</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                </select>
                 <label>Data: 
                     <input type="text" value={text} onChange={handleChange}/>
                     <button type="submit">save</button>

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Tile from './components/Tile'
 import Popup from './components/Popup'
 import Edit from './components/Edit'
-import './App.css';
+import './styles/App.css';
 import axios from 'axios';
 
 const App = () => {

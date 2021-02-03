@@ -1,6 +1,6 @@
 import useSound from 'use-sound'
-import './Play.css'
-import soundUrl from './sprite.mp3'
+import '../styles/Play.css'
+import soundUrl from '../resources/sprite.mp3'
 
 const Play = (props) => {
 
