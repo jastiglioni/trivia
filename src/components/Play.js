@@ -9,7 +9,7 @@ const Play = (props) => {
             drake: [0, 3170],
             ewf: [3175, 8270]
         },
-        volume: 0.4
+        volume: 0.2
     })
 
      return (props.audio !== false) ? (
