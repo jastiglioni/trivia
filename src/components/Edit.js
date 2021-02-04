@@ -4,8 +4,9 @@ import axios from 'axios'
 const Edit = (props) => {
 
 const [tiles, setTiles] = useState('')
-const [text, setText] = useState('')
+const [money, setMoney] = useState('')
 const [qid, setQid] = useState('')   //Qid = Question ID
+const [question, setQuestion] = useState('')
 
 const hook = () => {
     axios
@@ -18,10 +19,17 @@ const hook = () => {
   useEffect(hook, [])
 
 const handleChange = (event) => {
-    event.preventDefault()
-    console.log(event.target.value)
-    setText(event.target.value)
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    this.setState({
+        [name]: value
+      });
+    
 }
+
+
 
 const handleSelect = (event) => {
     event.preventDefault()
@@ -34,7 +42,7 @@ const handleSubmit = () => {  //ONLY WORKS WITH 1
     const url = `http://localhost:3001/notes/${qid}`
     const tile = tiles.find(n => n.id === qid)
     console.log(tile);
-    const changedNote = { ...tile, value: text }
+    const changedNote = { ...tile, value: money, text: question }
     axios.put(url, changedNote).then(response => {
     setTiles(tiles.map(q => q.id !== qid ? q : response.data))  //response.data is changedNote
     })
@@ -52,12 +60,23 @@ const handleSubmit = () => {  //ONLY WORKS WITH 1
                     <option value="4">Four</option>
                     <option value="5">Five</option>
                 </select>
+                <br/>
+                <label>Tile Value 
+                    <input 
+                    name="value"
+                    type="text" value={money} onChange={handleChange}/>
+            </label>
+            <br/>
+            <label>Question 
+                    <input 
+                    name="question"
+                    type="text" value={question} onChange={handleChange}/>   
+            </label>
+            <br/>
+            <button type="submit" onClick={handleSubmit}>save</button>
             </form>
 
-            <label>Data: 
-                    <input type="text" value={text} onChange={handleChange}/>
-                    <button type="submit" onClick={handleSubmit}>save</button>
-                </label>
+            
             {console.log(tiles)}
         </div>
     )
