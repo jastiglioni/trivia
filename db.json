@@ -3,13 +3,16 @@
     {
       "id": 1,
       "text": "another test",
-      "value": "only",
+      "value": "$ 200",
       "selected": false,
       "audio": false
     },
     {
-      "value": "please",
-      "id": 2
+      "id": 2,
+      "text": "another test",
+      "value": "$ 400",
+      "selected": false,
+      "audio": false
     },
     {
       "id": 3,
@@ -19,8 +22,11 @@
       "audio": "drake"
     },
     {
-      "value": "",
-      "id": 4
+      "id": 4,
+      "text": "another test",
+      "value": "$ 800",
+      "selected": false,
+      "audio": false
     },
     {
       "id": 5,
