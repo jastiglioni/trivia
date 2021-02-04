@@ -7,13 +7,15 @@ const [tiles, setTiles] = useState('')
 const [text, setText] = useState('')
 const [qid, setQid] = useState('')   //Qid = Question ID
 
-useEffect(() => {
+const hook = () => {
     axios
         .get('http://localhost:3001/notes')
         .then (res => {
         setTiles(res.data)
         }) 
-  }, [])
+  }
+
+  useEffect(hook, [])
 
 const handleChange = (event) => {
     event.preventDefault()
@@ -27,19 +29,21 @@ const handleSelect = (event) => {
     setQid(event.target.value)
 }
 
-const handleSubmit = (id) => {  //ONLY WORKS WITH 1
+const handleSubmit = () => {  //ONLY WORKS WITH 1
 
-    const url = `http://localhost:3001/notes/${id}`
-    const tile = tiles.find(n => n.id === id)
+    const url = `http://localhost:3001/notes/${qid}`
+    const tile = tiles.find(n => n.id === qid)
+    console.log(tile);
     const changedNote = { ...tile, value: text }
     axios.put(url, changedNote).then(response => {
-    setTiles(tiles.map(q => q.id !== id ? q : response.data))  //response.data is changedNote
+    setTiles(tiles.map(q => q.id !== qid ? q : response.data))  //response.data is changedNote
     })
+    
 }
 
     return (
         <div>
-            <form onSubmit={() => handleSubmit(qid)}>
+            <form>
                 <select value={qid} onChange={handleSelect}>
                     <option value="">--Please choose an option--</option>
                     <option value="1">One</option>
@@ -48,11 +52,13 @@ const handleSubmit = (id) => {  //ONLY WORKS WITH 1
                     <option value="4">Four</option>
                     <option value="5">Five</option>
                 </select>
-                <label>Data: 
-                    <input type="text" value={text} onChange={handleChange}/>
-                    <button type="submit">save</button>
-                </label>
             </form>
+
+            <label>Data: 
+                    <input type="text" value={text} onChange={handleChange}/>
+                    <button type="submit" onClick={handleSubmit}>save</button>
+                </label>
+            {console.log(tiles)}
         </div>
     )
 }

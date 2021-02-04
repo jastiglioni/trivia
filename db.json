@@ -1,18 +1,12 @@
 {
   "notes": [
     {
-      "id": 1,
-      "text": "another test",
-      "value": "only",
-      "selected": false,
-      "audio": false
+      "value": "$ 200",
+      "id": 1
     },
     {
-      "id": 2,
-      "text": "this recording artist had an illustrious solo career after leaving N-Sync in 2002",
       "value": "$ 400",
-      "selected": false,
-      "audio": false
+      "id": 2
     },
     {
       "id": 3,
@@ -22,15 +16,12 @@
       "audio": "drake"
     },
     {
-      "value": "",
+      "value": "$ 800",
       "id": 4
     },
     {
-      "id": 5,
-      "text": "Earth, Wind, & Fire released this timeless classic in 1978",
       "value": "$ 1000",
-      "selected": false,
-      "audio": "ewf"
+      "id": 5
     }
   ]
 }
