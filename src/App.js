@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 
 import Edit from './components/Edit'
 import './styles/App.css';
-import axios from 'axios';
 import {
   BrowserRouter as Router,
   Switch, Route,
@@ -22,17 +21,15 @@ const App = () => {
       <div>
 
         <Router>
-        <Link style={padding} to="/">HOME</Link>
-        
+          <Link style={padding} to="/">HOME</Link>
           <Link style={padding} to="/edit">EDIT</Link>
-          
-
+  
           <Switch>
             <Route path='/edit' component={Edit} />
             <Route path='/' component={Game} />
           </Switch>
-
         </Router>
+
       </div>
     </div>    
   )

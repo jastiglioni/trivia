@@ -19,6 +19,7 @@ const handleChange = (event) => {
     event.preventDefault()
     console.log(event.target.value)
     setText(event.target.value)
+    
 }
 
 const handleSelect = (event) => {
@@ -27,19 +28,20 @@ const handleSelect = (event) => {
     setQid(event.target.value)
 }
 
-const handleSubmit = (event, id) => {  //ONLY WORKS WITH 1
-    event.preventDefault()
-    const url = `http://localhost:3001/notes/${id}`
-    const tile = tiles.find(n => n.id === id)
-    const changedNote = { ...tile, value: text }
-    axios.put(url, changedNote).then(response => {
-    setTiles(tiles.map(q => q.id !== id ? q : response.data))  //response.data is changedNote
-    })
+
+const EditQuestion = () => {
+    const tile = tiles.map(q => q.id)
+    return (
+        <label>
+            {tile}
+        </label>
+    )
 }
+
 
     return (
         <div>
-            <form onSubmit={() => handleSubmit(qid)}>
+            <form>
                 <select value={qid} onChange={handleSelect}>
                     <option value="">--Please choose an option--</option>
                     <option value="1">One</option>
@@ -48,10 +50,15 @@ const handleSubmit = (event, id) => {  //ONLY WORKS WITH 1
                     <option value="4">Four</option>
                     <option value="5">Five</option>
                 </select>
-                <label>Data: 
-                    <input type="text" value={text} onChange={handleChange}/>
-                    <button type="submit">save</button>
-                </label>
+
+                <EditQuestion obj={qid} />
+
+               
+
+                <br/>
+                <br/>
+
+
             </form>
         </div>
     )

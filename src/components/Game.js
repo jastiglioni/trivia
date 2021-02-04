@@ -33,7 +33,7 @@ const Game = () => {
     return (
         <div>
         <button className="col">MUSIC</button>
-        {tiles.map(obj => <Tile func={() => setActiveQuestion(obj)}key={obj.text} tile={obj.value} />)}
+        {tiles.map(obj => <Tile func={() => setActiveQuestion(obj)}key={obj.id} tile={obj.value} />)}
             <Popup func={() => togglePopup()} trigger={popup} text={question} audio={audio} />
         </div>
     )
