@@ -8,7 +8,7 @@ const notes = [
     value: '$ 200',
     selected: false,
     audio: false,
-    answer: `Deleware`
+    answer: `Delaware`
   },
   {
     text: `this states's name is spanish for "full of flowers"`.toUpperCase(),
