@@ -4,34 +4,34 @@ import App from './App'
 
 const notes = [
   {
-    text: `Beyonce began her musical career appearing as the lead singer of this group`.toUpperCase(),
+    text: `this state was the first to ratify the United States constitution`.toUpperCase(),
     value: '$ 200',
     selected: false,
-    audio: false
+    audio: false,
   },
   {
-    text: 'this recording artist had an illustrious solo career after leaving N-Sync in 2002'.toUpperCase(),
+    text: `Mount Rushmore is located in this state`.toUpperCase(),
     value: '$ 400',
     selected: false,
     audio: false
   },
   {
-    text: 'This composition by Beethoven was published in 1867'.toUpperCase(),
+    text: `The capital of this state is Helena`.toUpperCase(),
     value: '$ 600',
     selected: false,
-    audio: 'ewf',
+    audio: false,
   },
   {
-    text: `Eminem's moniker plays off of the initials his real name`.toUpperCase(),
+    text: `this state is home to America’s first public park`.toUpperCase(),
     value: '$ 800',
     selected: false,
     audio: false
   },
   {
-    text: 'This critally-accliamed rendition of the National Anthem was performed by this artist'.toUpperCase(),
+    text: `The Mason-Dixon Line makes the southern boarder of this state`.toUpperCase(),
     value: '$ 1000',
     selected: false,
-    audio: 'drake',
+    audio: false,
   }
 ]
 
@@ -39,3 +39,4 @@ ReactDOM.render(
   <App notes={notes} />,
   document.getElementById('root')
 )
+
