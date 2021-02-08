@@ -11,25 +11,25 @@ const notes = [
     answer: `Deleware`
   },
   {
-    text: `Mount Rushmore is located in this state`.toUpperCase(),
+    text: `this states's name is spanish for "full of flowers"`.toUpperCase(),
     value: '$ 400',
     selected: false,
     audio: false,
-    answer: `South Dakota`
+    answer: `Florida`
   },
   {
-    text: `The capital of this state is Helena`.toUpperCase(),
+    text: `Kansas City is located in this state`.toUpperCase(),
     value: '$ 600',
     selected: false,
     audio: false,
-    answer: `Montana`
+    answer: `Missouri`
   },
   {
     text: `this state is home to America’s first public park`.toUpperCase(),
     value: '$ 800',
     selected: false,
     audio: false,
-    answer: `Massachusetts`
+    answer: `Massachusetts (Boston Common)`
   },
   {
     text: `The Mason-Dixon Line makes the southern boarder of this state`.toUpperCase(),
