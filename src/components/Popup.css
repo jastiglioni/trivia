@@ -17,20 +17,33 @@
 }
 
 .popup-inner {
-    color: whitesmoke;
+    
     position: relative;
     padding: 32px;
     width: 100%;
     max-width: 1000px;
     background-color: #0309B8;
     font-family: korinna;
-    text-shadow: 5px 5px 0.075em black;
-    font-size: 60px;
+    
 
 }
 
 .popup-inner .text {
-    width: 100%;
+    color: whitesmoke;
+    text-shadow: 5px 5px 0.075em black;
+    font-size: 60px;
+}
+
+ .answerFalse {
+    color: #0309B8;
+    text-shadow: 2.5px 2.5px 0.075em #0309B8;
+    font-size: 30px;
+}
+
+.answerTrue {
+    color: whitesmoke;
+    text-shadow: 2.5px 2.5px 0.075em black;
+    font-size: 30px;
 }
 
 .popup-inner .close-btn {

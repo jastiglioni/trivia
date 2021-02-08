@@ -8,22 +8,29 @@ const App = (props) => {
   const [popup, setPopup] = useState(false)
   const [q2, setq2] = useState('')
   const [audio, setAudio] = useState(false)
-  //const [audFile, setAudFile] = useState('')
+  const [answer, setAnswer] = useState(props.answer)
+
+
+ 
   
 
   const setQuestion = (tile) => {
     setq2(tile.text)
     setAudio(tile.audio)
-    console.log("the audio is", tile.audio)
-    //setAudFile(tile.audFile)
     tile.value = ''
     togglePopup()
+    setAnswer(tile.answer)
   }
+
+
 
 
   const togglePopup = () => {
     setPopup(!popup)
+   
   }
+
+  
 
   
 
@@ -42,8 +49,8 @@ const App = (props) => {
   return (
     <div className="App">
       <button style={col}>STATES</button>
-      {tiles.map(obj => <Tile func={() => setQuestion(obj)}key={obj.text} tile={obj.value} />)}
-        <Popup func={() => togglePopup()} trigger={popup} text={q2} audio={audio} />
+      {tiles.map(obj => <Tile func={() => setQuestion(obj)} key={obj.text} tile={obj.value} />)}
+        <Popup func={() => togglePopup()} answer={answer} trigger={popup} text={q2} audio={audio} />
     </div>
 
     
