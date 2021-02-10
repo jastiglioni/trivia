@@ -4,39 +4,39 @@ import App from './App'
 
 const notes = [
   {
-    text: `this state was the first to ratify the United States constitution`.toUpperCase(),
+    text: `this country has 7 of the 10 largest shipping ports in the world`.toUpperCase(),
     value: '$ 200',
     selected: false,
     audio: false,
-    answer: `Delaware`
+    answer: `China`
   },
   {
-    text: `this state's name is spanish for "full of flowers"`.toUpperCase(),
+    text: `this city-state resides on the south eastern coast of france`.toUpperCase(),
     value: '$ 400',
     selected: false,
     audio: false,
-    answer: `Florida`
+    answer: `Monaco`
   },
   {
-    text: `Kansas City is located in this state`.toUpperCase(),
+    text: `the united states dropped nuclear bombs on Hiroshima and this city`.toUpperCase(),
     value: '$ 600',
     selected: false,
     audio: false,
-    answer: `Missouri`
+    answer: `Nagasaki`
   },
   {
-    text: `this state is home to America’s first public park`.toUpperCase(),
+    text: `khmer is the offical language of this country`.toUpperCase(),
     value: '$ 800',
     selected: false,
     audio: false,
-    answer: `Massachusetts (Boston Common)`
+    answer: `Cambodia`
   },
   {
-    text: `The Mason-Dixon Line makes the southern boarder of this state`.toUpperCase(),
+    text: `This country uses the currency code "NOK" to demarcate their currency`.toUpperCase(),
     value: '$ 1000',
     selected: false,
     audio: false,
-    answer: `Pennsylvania`
+    answer: `Norway`
   }
 ]
 

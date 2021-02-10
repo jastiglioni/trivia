@@ -48,7 +48,7 @@ const App = (props) => {
  
   return (
     <div className="App">
-      <button style={col}>STATES</button>
+      <button style={col}>CITIES & COUNTRIES</button>
       {tiles.map(obj => <Tile func={() => setQuestion(obj)} key={obj.text} tile={obj.value} />)}
         <Popup func={() => togglePopup()} answer={answer} trigger={popup} text={q2} audio={audio} />
     </div>
