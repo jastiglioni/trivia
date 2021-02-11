@@ -4,25 +4,25 @@ import App from './App'
 
 const notes = [
   {
-    text: `this country has 7 of the 10 largest shipping ports in the world`.toUpperCase(),
+    text: `the largest shipping port in the world is located in this city`.toUpperCase(),
     value: '$ 200',
     selected: false,
     audio: false,
-    answer: `China`
+    answer: `Shanghai`
   },
   {
-    text: `this city-state resides on the south eastern coast of france`.toUpperCase(),
+    text: `this city-state resides on the french riviera`.toUpperCase(),
     value: '$ 400',
     selected: false,
     audio: false,
     answer: `Monaco`
   },
   {
-    text: `the united states dropped nuclear bombs on Hiroshima and this city`.toUpperCase(),
+    text: `this city has the largest metropolitan economy in the world`.toUpperCase(),
     value: '$ 600',
     selected: false,
     audio: false,
-    answer: `Nagasaki`
+    answer: `Tokyo`
   },
   {
     text: `khmer is the offical language of this country`.toUpperCase(),
@@ -32,7 +32,7 @@ const notes = [
     answer: `Cambodia`
   },
   {
-    text: `This country uses the currency code "NOK" to demarcate their currency`.toUpperCase(),
+    text: `the currency code "NOK" is used to demarcate the currency of this country`.toUpperCase(),
     value: '$ 1000',
     selected: false,
     audio: false,
