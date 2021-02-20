@@ -9,10 +9,9 @@ var firebaseConfig = {
     messagingSenderId: "775258286646",
     appId: "1:775258286646:web:797eec688d5ffd16708697"
   };
+  
   // Initialize Firebase
-     firebase.initializeApp(firebaseConfig);
-//   const auth = firebase.auth()
-//   const firestore = firebase.firestore()
-//   const docRef = firestore.collection("cities").doc("SF");
+    firebase.initializeApp(firebaseConfig);
+
 
   export default firebase

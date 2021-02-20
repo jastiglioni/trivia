@@ -4,11 +4,11 @@ import Play from './Play'
 import Answer from './Answer'
 import db from '../dbConfig'
 
-//const dbConfig = require('../dbConfig')
-//const db = dbConfig.db
+
 const firestore = db.firestore()
 const docRef = firestore.collection("cities").doc("SF");
 var nameTest = ''
+
 const dataTest = docRef.get().then(doc => {
     nameTest = doc.data().name;
 })
@@ -18,7 +18,6 @@ const dataTest = docRef.get().then(doc => {
 const Popup = (props) => {
 
     const [ansFlag, setAnsFlag] = useState(false)
-
 
     const toggleAnswer = () => {
         setAnsFlag(!ansFlag)
@@ -37,7 +36,7 @@ const Popup = (props) => {
         
         
         <div className='popup'>
-        <div className="buzzbar ">{nameTest}</div>
+        <div className="buzzbar">{nameTest}</div>
         
             <div className='popup-inner'>
                 <div className='close-btn'>
