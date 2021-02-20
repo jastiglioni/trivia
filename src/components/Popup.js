@@ -18,8 +18,16 @@ const Popup = (props) => {
         setAnsFlag(false)
         return f()
     }
+
+
+
+
     return (props.trigger) ? (
+        
+        
         <div className='popup'>
+        <div className="buzzbar ">Help</div>
+        
             <div className='popup-inner'>
                 <div className='close-btn'>
                 <button onClick={toggleAnswer}>Answer</button>
@@ -32,6 +40,7 @@ const Popup = (props) => {
                     <Play audio={props.audio}/>
             </div>
         </div>
+       
     ) :''
 }
 

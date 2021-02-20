@@ -3,16 +3,14 @@ import Tile from './components/Tile'
 import Popup from './components/Popup'
 import './App.css';
 
+
+
 const App = (props) => {
   const [tiles] = useState(props.notes)
   const [popup, setPopup] = useState(false)
   const [q2, setq2] = useState('')
   const [audio, setAudio] = useState(false)
   const [answer, setAnswer] = useState(props.answer)
-
-
- 
-  
 
   const setQuestion = (tile) => {
     setq2(tile.text)
@@ -22,18 +20,12 @@ const App = (props) => {
     setAnswer(tile.answer)
   }
 
-
-
-
   const togglePopup = () => {
     setPopup(!popup)
    
   }
 
   
-
-  
-
   const col = {
     color: `white`,
     fontFamily: `Impact`,

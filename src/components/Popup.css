@@ -10,10 +10,15 @@
     width: 100%;
     height: 100%;
     background-color: #0309B8;
-
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.popup .buzzbar {
+    width: 77%;
+    background-color: green;
 }
 
 .popup-inner {
@@ -34,13 +39,13 @@
     font-size: 60px;
 }
 
- .answerFalse {
+ .answerfalse {
     color: #0309B8;
     text-shadow: 3px 3px 0.075em #0309B8;
     font-size: 45px;
 }
 
-.answerTrue {
+.answertrue {
     color: whitesmoke;
     text-shadow: 3px 3px 0.075em black;
     font-size: 45px;
